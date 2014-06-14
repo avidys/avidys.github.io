@@ -162,7 +162,17 @@
 													on:			function(t) { t.removeClass('inactive'); },
 													off:		function(t) { t.addClass('inactive'); }
 												});
-									
+
+                                            $('.style4')
+												.scrollwatch({
+													delay:		50,
+													range:		0.5,
+													anchor:		'center',
+													init:		function(t) { t.addClass('inactive'); },
+													on:			function(t) { t.removeClass('inactive'); },
+													off:		function(t) { t.addClass('inactive'); }
+												});
+
 										// Work
 											$('#work')
 												.scrollwatch({
@@ -229,6 +239,11 @@
 										$('.main.style2')
 											.unscrollwatch()
 											.removeClass('inactive');
+
+                                        $('.style4')
+											.unscrollwatch()
+											.removeClass('inactive');
+								
 								
 									// Work
 										$('#work')
